@@ -1,12 +1,12 @@
 import React, {useState,} from 'react'
-import axios from 'axios'
-import { Card, Button, CardHeader, CardFooter, CardBody,
-    CardTitle, CardText} from 'reactstrap';
+
+import {  Button,
+    } from 'reactstrap';
 
 const Gallery = (props) => {
 
     const [fileInputState, setFileInputState] = useState('')
-    const [selectedFile, setSelectedFile] = useState('')
+    // const [selectedFile, setSelectedFile] = useState('')
     const [previewSource, setPreviewSource] = useState('')
 
     

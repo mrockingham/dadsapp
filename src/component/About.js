@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import Comments from './comments'
-import { Card, Button, CardTitle, CardText,
+import { Card, Button, 
     Modal, ModalHeader, ModalBody, ModalFooter, CardBody, CardHeader } from 'reactstrap';
 
 

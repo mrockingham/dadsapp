@@ -1,8 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import {Image} from'cloudinary-react'
 import Gallery from './Gallery'
-import { Card, Button, CardHeader, CardFooter, CardBody,
-    CardTitle, CardText} from 'reactstrap';
+
 
 
 const GalleryList = props => {

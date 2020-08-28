@@ -1,6 +1,6 @@
 import React from 'react'
-import { Card, Button, CardHeader, CardFooter, CardBody,
-    CardTitle, CardText} from 'reactstrap';
+import { Card,  CardHeader,  CardBody,
+    } from 'reactstrap';
     import {Link} from "react-router-dom";
 
 const  SideBar = () => {

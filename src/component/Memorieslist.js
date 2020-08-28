@@ -1,9 +1,9 @@
-import React, {useState, useEffect} from 'react'
-import InputEmoji from 'react-input-emoji'
+import React, {useState} from 'react'
+
 import axios from 'axios'
 import {useHistory} from 'react-router-dom'
-import { Card, Button, CardHeader, CardFooter, CardBody,
-    CardTitle, CardText, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Card, Button, CardHeader, CardBody,
+     Form, FormGroup, Label, Input, } from 'reactstrap';
 
 const Memorieslist = (props) => {
 
