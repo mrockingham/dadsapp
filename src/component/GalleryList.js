@@ -9,7 +9,7 @@ const [imageIds, setImageIds] =useState([])
 
 const loadImages = async () =>{
     try{
-        const res = await fetch('https://cors-anywhere.herokuapp.com/https://bigmike.herokuapp.com/api/images')
+        const res = await fetch('https://bigmike.herokuapp.com/api/images')
         const data = await res.json()
         console.log(data)
         setImageIds(data)

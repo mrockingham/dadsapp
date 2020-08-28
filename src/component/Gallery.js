@@ -34,7 +34,7 @@ const Gallery = (props) => {
     const uploadImage = async (base64EncodedImage) =>{
        console.log(base64EncodedImage) 
        try {
-           await fetch ('https://cors-anywhere.herokuapp.com/https://bigmike.herokuapp.com/api/upload', {
+           await fetch ('https://bigmike.herokuapp.com/api/upload', {
            method:'POST',    
            body: JSON.stringify({data:
             base64EncodedImage}),
