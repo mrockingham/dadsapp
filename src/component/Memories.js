@@ -6,7 +6,7 @@ const Memories = props => {
     const [memories, setMemories] = useState([])
 
 useEffect(()=>{
-    axios.get('http://localhost:5002/api/stories')
+    axios.get('https://dadsendoff.herokuapp.com/api/stories')
     .then(res=>{
         console.log(res.data)
         setMemories(res.data)

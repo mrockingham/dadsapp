@@ -7,7 +7,7 @@ import About from './component/About'
 import './App.css';
 import GalleryList from './component/GalleryList';
 import Memories from './component/Memories';
-import record from './img/record.jpg'
+
 
 function App() {
   return (

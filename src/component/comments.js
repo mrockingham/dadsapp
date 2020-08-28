@@ -8,7 +8,7 @@ const Comments = props => {
     // const [inputC, setInputC]= useState({Name:'', comments:''})
 
 useEffect(()=>{
-    axios.get('http://localhost:5002/api/comments')
+    axios.get('https://dadsendoff.herokuapp.com/api/comments')
     .then(res=>{
         console.log(res.data)
         setComments(res.data)

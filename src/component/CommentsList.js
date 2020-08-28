@@ -15,7 +15,7 @@ const CommentsList = (props) => {
 const submit = (e)=>{
     e.preventDefault()
 
-    axios.post('http://localhost:5002/api/comments', inputC)
+    axios.post('https://dadsendoff.herokuapp.com/api/comments', inputC)
    setInputC({Name:'', comments:''})
     push('/')
     history.go()

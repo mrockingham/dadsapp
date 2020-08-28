@@ -7,7 +7,7 @@ import { Card, Button,
 const About = (props) => {
 
  const {
-    buttonLabel,
+    
     className
   } = props;
 

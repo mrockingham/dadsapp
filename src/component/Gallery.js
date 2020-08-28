@@ -34,7 +34,7 @@ const Gallery = (props) => {
     const uploadImage = async (base64EncodedImage) =>{
        console.log(base64EncodedImage) 
        try {
-           await fetch ('http://localhost:5002/api/upload', {
+           await fetch ('https://dadsendoff.herokuapp.com/api/upload', {
            method:'POST',    
            body: JSON.stringify({data:
             base64EncodedImage}),

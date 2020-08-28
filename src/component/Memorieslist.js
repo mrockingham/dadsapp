@@ -15,7 +15,7 @@ const Memorieslist = (props) => {
     const submit = (e)=>{
         e.preventDefault()
     
-        axios.post('http://localhost:5002/api/story', inputM)
+        axios.post('https://dadsendoff.herokuapp.com/api/story', inputM)
        setInputM({Name:'', story:''})
         push('/')
         history.go()
