@@ -5,8 +5,9 @@ import Header from './component/Header'
 import SideBar from './component/SideBar'
 import About from './component/About'
 import './App.css';
-import GalleryList from './component/GalleryList';
+
 import Memories from './component/Memories';
+import Gallery from './component/Gallery';
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
       <SideBar/>
       <Switch>
         <Route exact path= '/' component={About}></Route>
-        <Route exact path='/Gallery' component={GalleryList}></Route>
+       <Route exact path= '/Gallery' component ={Gallery}></Route>
         <Route exact path='/Memories' component ={Memories}></Route>
       </Switch>
       
