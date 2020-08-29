@@ -19,24 +19,26 @@ const About = (props) => {
             
             <div className='about-container'>
                 
-                <Card body inverse style={{ backgroundColor: 'grey', borderColor: '#333' }} className ='about-section'>
-                    <CardHeader className='about-title'>
+                <div body inverse style={{ backgroundColor: 'grey', borderColor: '#333' }} className ='about-section'>
+                    <div className='about-title'>
                         <h2>History</h2>  
-                    </CardHeader>
-                        <CardBody className='about-box'>
-                            <p className='about-text-box'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                        </CardBody>
+                    </div>
+                        <div className='about-box'>
+                            <p className='about-text-box'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices blandit varius. Quisque pharetra fermentum ex eget bibendum. Nullam ac vestibulum urna, in lobortis neque. Nunc malesuada justo volutpat lacus imperdiet, a dapibus elit gravida. Maecenas ex turpis, mattis consequat lectus at, pellentesque placerat mi. Integer elementum purus et magna vestibulum interdum. </p>
+                        </div>
                 
-                </Card>
-                <Card body inverse style={{ backgroundColor: 'grey', borderColor: '#333' }} className='update-section'>
-                    <CardHeader className = 'update-title'>
+                </div>
+                <div className='update-section'>
+                    <div className = 'update-title'>
                         <h2>Updates</h2>
-                    </CardHeader>
-                    <CardBody className='update-box'>
+                    </div>
+                    <div className='update-box'>
                         <p className='update-text-box'>
-                        Hi, I just wanted to let everyone know, we will<br></br> be having a memorial... 
+                        Hi, I just wanted to let everyone know, we will be having a memorial
+                        service for Michael BigMike Rockingham on Sept, 2 at 11:00 am. For 
+                        anyone, not able to attend we will also be holding a Virtual Zoom video chat as well. Link well be coming soon. 
                         </p>
-                    </CardBody>
+                    </div>
                     <Button style={{fontWeight: '900'}} color="muted" onClick={toggle}>More info</Button>
                         <Modal isOpen={modal} toggle={toggle} className={className}>
                          <ModalHeader toggle={toggle}>Updates</ModalHeader>
@@ -50,7 +52,7 @@ const About = (props) => {
           <Button color="secondary" onClick={toggle}>Cancel</Button>
         </ModalFooter>
       </Modal>
-                </Card>
+                </div>
                 
             </div>
             < Comments />

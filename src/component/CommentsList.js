@@ -32,18 +32,20 @@ const handleChange = (event) =>{
 
     return (
         <div className='comments-section'>
-            <h2>Comments</h2>
-            <Card className='comments'>
+            <div clasName='comments-section-comments'>
+            <h2 clasName='comments-section-comments'>Comments</h2>
+            </div>
+            <div className='comments'>
             {props.comments.map(comments =>{
                 return(
                     <div>
                         <div className='read-comments'>
-                            <CardHeader className='comment-name'>
+                            <div className='comment-name'>
                               Name: {comments.Name}  
-                            </CardHeader>
-                            <CardBody className='comment-name'>
+                            </div>
+                            <div className='comment-name'>
                               comment: {comments.comments}  
-                            </CardBody>
+                            </div>
                          </div>
                      <div className='input-comments'>
                         
@@ -51,11 +53,11 @@ const handleChange = (event) =>{
                     </div>
                 )
                 })}
-            </Card>
-            <Form onSubmit ={submit} className='comments-form'>
-                <FormGroup>
-                <h2>Leave A Comment...</h2>
-                <Label className='comments-input-name'>Name</Label>
+            </div>
+            <form onSubmit ={submit} className='comments-form'>
+                
+                <h2 className='comments-section-leave'>Leave A Comment...</h2>
+                <h2 className='comments-input-name'>Name</h2>
             <Input
                 type='text'
                 name='Name'
@@ -63,7 +65,7 @@ const handleChange = (event) =>{
                 value={inputC.Name}
                 onChange={handleChange}
             />
-            <Label className='comments-input-name'>Comment</Label>
+            <h2 className='comments-input-name'>Comment</h2>
             <Input
                 className='comment-story-input'
                 type='textarea'
@@ -74,8 +76,8 @@ const handleChange = (event) =>{
             />
             <div></div>
             <Button style={{marginTop:'2%'}} type='submit' value="submit" className='btn1 solid'>Submit</Button>
-            </FormGroup>
-             </Form>   
+            
+             </form>   
             </div>
     )
 }

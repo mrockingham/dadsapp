@@ -17,13 +17,16 @@ function App() {
       <div className='extra-containter'>
       <NavBar />
       
-      <SideBar/>
+      
       <Switch>
         <Route exact path= '/' component={About}></Route>
+        </Switch>
+        
+        <Switch>
        <Route exact path= '/Gallery' component ={Gallery}></Route>
         <Route exact path='/Memories' component ={Memories}></Route>
       </Switch>
-      
+      <SideBar/>
     </div>
     <div className="App">
       
