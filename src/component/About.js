@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import Comments from './comments'
 import { Card, Button, 
     Modal, ModalHeader, ModalBody, ModalFooter, CardBody, CardHeader } from 'reactstrap';
+import SideBar from './SideBar';
 
 
 const About = (props) => {
@@ -16,7 +17,7 @@ const About = (props) => {
   const toggle = () => setModal(!modal);
     return (
         <div className='extra-containter1'>
-            
+            <div className='about-container-top' >
             <div className='about-container'>
                 
                 <div body inverse style={{ backgroundColor: 'grey', borderColor: '#333' }} className ='about-section'>
@@ -38,25 +39,36 @@ const About = (props) => {
                         service for Michael BigMike Rockingham on Sept, 2 at 11:00 am. For 
                         anyone, not able to attend we will also be holding a Virtual Zoom video chat as well. Link well be coming soon. 
                         </p>
-                    </div>
+                    
                     <Button style={{fontWeight: '900'}} color="muted" onClick={toggle}>More info</Button>
                         <Modal isOpen={modal} toggle={toggle} className={className}>
                          <ModalHeader toggle={toggle}>Updates</ModalHeader>
-         <ModalBody>
+                                <ModalBody>
                          Hi, I just wanted to let everyone know, we will be having a memorial
                         service for Michael BigMike Rockingham on Sept, 2 at 11:00 am. For 
                         anyone, not able to attend we will also be holding a Virtual Zoom video chat as well. Link well be coming soon.
-        </ModalBody>
-        <ModalFooter>
-          {' '}
-          <Button color="secondary" onClick={toggle}>Cancel</Button>
-        </ModalFooter>
-      </Modal>
+                                </ModalBody>
+                                <ModalFooter>
+                                     {' '}
+                        <Button color="secondary" onClick={toggle}>Cancel</Button>
+                                </ModalFooter>
+                                </Modal>
+                     </div>           
                 </div>
                 
             </div>
-            < Comments />
-        </div>    
+
+           {/* <div className='about-sidebar'>
+               <SideBar/>
+           </div>  */}
+         </div>  
+         <div className='about-comments'>
+           <Comments/>  
+         </div> 
+
+        </div>  
+        
+          
     )
 }
 

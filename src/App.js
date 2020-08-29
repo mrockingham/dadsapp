@@ -14,23 +14,23 @@ function App() {
   return (
     <Router>
       <Header />
-      <div className='extra-containter'>
-      <NavBar />
-      
-      
-      <Switch>
-        <Route exact path= '/' component={About}></Route>
-        </Switch>
+        <NavBar />
+          <div className='App-containter'>
+            <div className='App-main-section'>
         
-        <Switch>
-       <Route exact path= '/Gallery' component ={Gallery}></Route>
-        <Route exact path='/Memories' component ={Memories}></Route>
-      </Switch>
-      <SideBar/>
-    </div>
-    <div className="App">
-      
-    </div>
+               <Switch>
+                <Route exact path= '/' component={About}></Route>
+                <Route exact path= '/Gallery' component ={Gallery}></Route>
+                  <Route exact path='/Memories' component ={Memories}></Route>
+                  </Switch>
+            </div>
+            {/* <div className='App-side-section'>
+                  <SideBar/>
+            </div> */}
+            
+      </div>
+    
+    
     </Router>
   );
 }

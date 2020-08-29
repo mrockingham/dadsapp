@@ -20,8 +20,11 @@ const UploadForm = () => {
   };
 
   return (
+    <div className='gallery-top'>
     <form>
+     <h2>Upload your pictures of Big Mike</h2> 
       <label>
+        
         <input type="file" onChange={handleChange} />
         <span>+</span>
       </label>
@@ -31,6 +34,7 @@ const UploadForm = () => {
         { file && <ProgressBar file={file} setFile={setFile} /> }
       </div>
     </form>
+    </div>
   );
 }
 

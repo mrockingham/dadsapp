@@ -32,28 +32,28 @@ const handleChange = (event) =>{
 
     return (
         <div className='comments-section'>
-            <div clasName='comments-section-comments'>
-            <h2 clasName='comments-section-comments'>Comments</h2>
-            </div>
-            <div className='comments'>
-            {props.comments.map(comments =>{
-                return(
+            <div className='comments-top'>
+                    <div clasName='comments-section-comments'>
+                     <h2 clasName='comments-section-comments'>Comments</h2>
+                </div>
+                <div className='comments'>
+                {props.comments.map(comments =>{
+                    return(
                     <div>
                         <div className='read-comments'>
                             <div className='comment-name'>
                               Name: {comments.Name}  
                             </div>
                             <div className='comment-name'>
-                              comment: {comments.comments}  
+                              Comment: {comments.comments}  
                             </div>
                          </div>
-                     <div className='input-comments'>
-                        
                      </div>
-                    </div>
                 )
                 })}
+                </div>
             </div>
+            <div className= 'comments-bottom'>
             <form onSubmit ={submit} className='comments-form'>
                 
                 <h2 className='comments-section-leave'>Leave A Comment...</h2>
@@ -78,6 +78,7 @@ const handleChange = (event) =>{
             <Button style={{marginTop:'2%'}} type='submit' value="submit" className='btn1 solid'>Submit</Button>
             
              </form>   
+             </div>
             </div>
     )
 }
