@@ -29,6 +29,7 @@ const About = (props) => {
                         </div>
                 
                 </div>
+                <section className="middle-pic-about">what is this</section>
                 <div className='update-section'>
                     <div className = 'update-title'>
                         <h2>Updates</h2>
@@ -63,6 +64,7 @@ const About = (props) => {
            </div>  */}
          </div>  
          <div className='about-comments'>
+         <section className="middle-pic-about2">what is this</section>
            <Comments/>  
          </div> 
 
