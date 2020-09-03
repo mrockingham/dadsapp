@@ -53,10 +53,12 @@ const Image2 = randomImg()
                 
             <div body inverse style={{ backgroundColor: 'grey',                borderColor: '#333' }} className ='about-section'>
                      <div className='about-title'>
-                         <h2>History</h2>  
+                         <h2>Big Mike's Story</h2>  
                     </div>
                         <div className='about-box'>
-                            <p className='about-text-box'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices blandit varius. Quisque pharetra fermentum ex eget bibendum. Nullam ac vestibulum urna, in lobortis neque. Nunc malesuada justo volutpat lacus imperdiet, a dapibus elit gravida. Maecenas ex turpis, mattis consequat lectus at, pellentesque placerat mi. Integer elementum purus et magna vestibulum interdum. </p>
+                            <p className='about-text-box'> Michael Rockingham affectionately known as "Big Mike" was born in Philadelphia on 01/23/1958, to Adark Rockingham and Delores Precise Rockingham. He was the oldest of three children, his brother, Keith Rockingham and sister, Alicia Rockingham. </p>
+                            <p>Big Mike was educated in the public-school system of Philadelphia. He spent a lot of time with his GrandMother Evangeline Martin "Kat" and Grandfather John D. He wasn't afraid of an advenure, meaning he would drive anything. In 1978 he married the love of his life Deborah Rockingham. As a family he loved to travel, he loved to cook, and music was a welcome past time for him. No event was to small, he delighted in giving the crowd something to talk about. His life was rich and full. He now rest peacefully                
+                            </p>
                         </div>
                 
                 </div>

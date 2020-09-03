@@ -53,7 +53,7 @@ const Memorieslist = (props) => {
             <Form onSubmit ={submit} className='memories-form'>
                 <FormGroup>
                 <h2 className='memories-input-name'>Leave A Memory</h2>
-                <Label className='comments-input-name'>Name</Label>
+                <h2 className='comments-input-name'>Name</h2>
                 </FormGroup>
             <Input
                 className='memories-name-input'
@@ -64,7 +64,7 @@ const Memorieslist = (props) => {
                 value={inputM.Name}
                 onChange={handleChange}
             />
-            <Label className='memories-input-name'>Story</Label>
+            <h2 className='memories-input-name'>Story</h2>
             <Input
                 className='memories-story-input'
                 type='text'
